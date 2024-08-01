@@ -4,6 +4,12 @@ npm install -g nodemon
 
 nodemon app.js
 
+docker ps
+
+docker images
+
 docker build -t my-express-app .
 
 docker run -d -p 3000:3000 my-express-app
+
+docker rmi -f $imagename
