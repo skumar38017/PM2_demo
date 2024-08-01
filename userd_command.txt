@@ -33,3 +33,9 @@ pm2 reload ecosystem.config.js
 pm2 restart ecosystem.config.js
 
 pm2 delete container0
+
+
+pm2 stop all
+pm2 delete all
+pm2 reset all
+pm2 kill

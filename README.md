@@ -78,4 +78,14 @@ These options can help you quickly find the information you need and manage your
         pm2 start app.js --max-memory-restart 1G
         Restart at 12:00 pm every day
         pm2 start app.js --cron-restart="0 12 * * *"
-        pm2 delete
+        pm2 delete all
+        pm2 reset all
+        pm2 kill
+
+
+## Start or Restart PM2 Processes:
+
+If you’ve made changes to the ecosystem.config.js file, start or restart the processes with:
+#
+        pm2 start ecosystem.config.js
+        pm2 reload ecosystem.config.js
