@@ -10,8 +10,8 @@ docker ps
 
 docker images
 
-docker build -t app-js-3004 .
+docker build -t app-js-3005 .
 
-docker run -d -p 3004:3004 --name 3004 app-js-3004:latest
+docker run -d -p 3005:3005 --name 3005 app-js-3005:latest
 
 docker rmi -f $imagename:tag
