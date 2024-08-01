@@ -27,9 +27,9 @@ module.exports = {
         // }
       },
       {
-        name: "container3",
+        name: "container2",
         script: "docker",
-        args: "run --name container0 -d -p 3002:3002 app-js-3002:latest",
+        args: "run --name container2 -d -p 3002:3002 app-js-3002:latest",
         watch: true, // Enable watching
         // env: {
         //     VERSION: "1.0.0" // Example version
