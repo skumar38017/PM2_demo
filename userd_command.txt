@@ -1,3 +1,5 @@
+git pull origin master
+
 lsof -i:3000
 
 npm install -g nodemon
@@ -8,8 +10,8 @@ docker ps
 
 docker images
 
-docker build -t app-js-3000.
+docker build -t app-js-3001 .
 
-docker run -d -p 3000:3000 --name container3000 app-js-3000:latest
+docker run -d -p 3001:3001 --name container3001 app-js-3001:latest
 
 docker rmi -f $imagename:tag

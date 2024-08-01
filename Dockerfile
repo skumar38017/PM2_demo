@@ -1,5 +1,5 @@
 # Use the official Node.js image as the base image
-FROM node:14
+FROM node:14-slim
 
 # Set the working directory inside the container
 WORKDIR /usr/src/app
@@ -17,7 +17,7 @@ RUN npm install -g nodemon
 COPY . .
 
 # Expose the port the app runs on
-EXPOSE 3001
+EXPOSE 3002
 
 # Command to run the application
 CMD ["nodemon", "app.js"]
