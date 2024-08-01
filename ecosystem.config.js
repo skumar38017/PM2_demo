@@ -17,6 +17,13 @@ module.exports = {
         // env: {
         //   NODE_ENV: "production"
         // }
+      },
+      {
+        {
+            name: "docker-monitor",
+            script: "./docker-monitor.js",
+            watch: false
+          }
       }
       // Add more containers as needed
     ]
