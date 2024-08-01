@@ -17,7 +17,7 @@ RUN npm install -g nodemon
 COPY . .
 
 # Expose the port the app runs on
-EXPOSE 3003
+EXPOSE 3004
 
 # Command to run the application
 CMD ["nodemon", "app.js"]
