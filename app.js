@@ -1,14 +1,14 @@
 // app.js
 const express = require('express');
 const app = express();
-const port = 3001;
+const port = 3000;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
 
 // Define a route for GET requests to the root URL
 app.get('/', (req, res) => {
-  res.send('local_app.js_running_on_docker_container:3001');
+  res.send('local_app.js running on local machine:3000');
 });
 
 // Define a route for GET requests to /about
