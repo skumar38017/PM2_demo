@@ -8,7 +8,7 @@ app.use(express.json());
 
 // Define a route for GET requests to the root URL
 app.get('/', (req, res) => {
-  res.send('Hello, World!');
+  res.send('local_express.js_on_local_machine:3000');
 });
 
 // Define a route for GET requests to /about
