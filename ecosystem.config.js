@@ -5,6 +5,7 @@ module.exports = {
         script: "docker",
         args: "run --name container0 -d -p 3000:3000 app-js-3000:latest",
         watch: true, // Enable watching
+        namespace: "testing containor" // Add namespace here
         // env: {
         //     VERSION: "1.0.0" // Example version
         //   }
@@ -18,6 +19,7 @@ module.exports = {
         script: "docker",
         args: "run --name container1 -d -p 3001:3001 app-js-3001:latest",
         watch: true, // Enable watching
+        namespace: "testing containor"
         // env: {
         //     VERSION: "1.0.0" // Example version
         //   }
@@ -31,6 +33,7 @@ module.exports = {
         script: "docker",
         args: "run --name container2 -d -p 3002:3002 app-js-3002:latest",
         watch: true, // Enable watching
+        namespace: "testing containor"
         // env: {
         //     VERSION: "1.0.0" // Example version
         //   }
@@ -43,6 +46,7 @@ module.exports = {
         name: "docker-monitor",
         script: "./docker-monitor.js",
         watch: true,
+        namespace: "Monitoring containor"
       },
 
       
