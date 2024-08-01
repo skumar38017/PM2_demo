@@ -1,1 +1,5 @@
 lsof -i:3000
+
+npm install -g nodemon
+
+nodemon app.js
