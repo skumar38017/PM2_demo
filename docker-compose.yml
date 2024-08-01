@@ -1,6 +1,82 @@
 version: '3'
 services:
-  web:
-    build: .
+  app0:
+    image: your_app1_image
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+  
+  app1:
+    image: your_app1_image
     ports:
       - "3001:3001"
+    environment:
+      - NODE_ENV=production
+
+  app2:
+    image: your_app2_image
+    ports:
+      - "3002:3002"
+    environment:
+      - NODE_ENV=production
+
+  app3:
+    image: your_app1_image
+    ports:
+      - "3003:3003"
+    environment:
+      - NODE_ENV=production
+
+  app4:
+    image: your_app2_image
+    ports:
+      - "3004:3004"
+    environment:
+      - NODE_ENV=production
+
+  app5:
+    image: your_app1_image
+    ports:
+      - "3005:3005"
+    environment:
+      - NODE_ENV=production
+
+  app6:
+    image: your_app2_image
+    ports:
+      - "3006:3006"
+    environment:
+      - NODE_ENV=production
+
+  app7:
+    image: your_app1_image
+    ports:
+      - "3007:3007"
+    environment:
+      - NODE_ENV=production
+
+  app8:
+    image: your_app2_image
+    ports:
+      - "3008:3008"
+    environment:
+      - NODE_ENV=production
+
+  app9:
+    image: your_app1_image
+    ports:
+      - "3009:3009"
+    environment:
+      - NODE_ENV=production
+
+  app10:
+    image: your_app2_image
+    ports:
+      - "30010:30010"
+    environment:
+      - NODE_ENV=production
+
+
+
+  # Add more services as needed

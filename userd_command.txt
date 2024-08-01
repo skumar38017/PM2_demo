@@ -1,8 +1,15 @@
+docker stop $(docker ps -q)
+
+
+docker rm $(docker ps -a -q)
+
+
 git pull origin master
 
 lsof -i:3000
 
 npm install -g nodemon
+
 
 nodemon app.js
 
@@ -15,3 +22,9 @@ docker build -t app-js-30010 .
 docker run -d -p 30010:30010 --name container30010 app-js-30010:latest
 
 docker rmi -f $imagename:tag
+
+npm install -g pm2
+
+pm2 start ecosystem.config.js
+
+
