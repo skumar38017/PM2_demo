@@ -26,11 +26,28 @@ module.exports = {
         //   NODE_ENV: "production"
         // }
       },
-        {
-            name: "docker-monitor",
-            script: "./docker-monitor.js",
-            watch: false
-          }
+      {
+        name: "container3",
+        script: "docker",
+        args: "run --name container0 -d -p 3002:3002 app-js-3002:latest",
+        watch: true, // Enable watching
+        // env: {
+        //     VERSION: "1.0.0" // Example version
+        //   }
+        // Optional: Specify other settings like environment variables
+        // env: {
+        //   NODE_ENV: "production"
+        // }
+      },
+      {
+        name: "docker-monitor",
+        script: "./docker-monitor.js",
+        watch: true,
+      },
+
+      
+
+
       // Add more containers as needed
     ]
   };
