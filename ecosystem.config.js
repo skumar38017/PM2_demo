@@ -1,20 +1,17 @@
 module.exports = {
     apps: [
       {
-        name: "container0",
-        script: "docker",
-        args: "run --name container0 -d -p 3000:3000 app-js-3000:latest",
-        watch: true, // Enable watching
-        namespace: "testing containor" // Add namespace here
+        name: "app1",
+        script: "./app.js",
         // env: {
         //     VERSION: "1.0.0" // Example version
         //   }
         // Optional: Specify other settings like environment variables
-        // env: {
-        //   NODE_ENV: "production"
-        // }
-      },
-      {
+        env: {
+           PORT: 3001
+        }
+      }
+      /*{
         name: "container1",
         script: "docker",
         args: "run --name container1 -d -p 3001:3001 app-js-3001:latest",
@@ -47,7 +44,7 @@ module.exports = {
         script: "./docker-monitor.js",
         watch: true,
         namespace: "Monitoring containor"
-      },
+      },*/
 
       
 
