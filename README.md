@@ -89,3 +89,4 @@ If you’ve made changes to the ecosystem.config.js file, start or restart the p
 #
         pm2 start ecosystem.config.js
         pm2 reload ecosystem.config.js
+        pm2 restart ecosystem.config.js
