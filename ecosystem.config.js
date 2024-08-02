@@ -10,7 +10,8 @@ module.exports = {
         //   }
         // Optional: Specify other settings like environment variables
         env: {
-           PORT: 3001
+           PORT: 3001,
+           VERSION: "1.0.0"
         }
       },
       {
@@ -23,7 +24,8 @@ module.exports = {
         //   }
         // Optional: Specify other settings like environment variables
         env: {
-           PORT: 3002
+           PORT: 3002,
+           VERSION: "1.0.0"
         }
       },
       {
@@ -37,7 +39,8 @@ module.exports = {
         //   }
         // Optional: Specify other settings like environment variables
         env: {
-           PORT: 3003
+           PORT: 3003,
+           VERSION: "1.0.0"
         }
       }
             
