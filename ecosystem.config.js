@@ -3,6 +3,8 @@ module.exports = {
       {
         name: "app1",
         script: "./app.js",
+        namespace: "test aap.js",
+        watch: true,
         // env: {
         //     VERSION: "1.0.0" // Example version
         //   }
@@ -14,6 +16,8 @@ module.exports = {
       {
         name: "app2",
         script: "./app.js",
+        namespace: "test aap.js",
+        watch: true,
         // env: {
         //     VERSION: "1.0.0" // Example version
         //   }
@@ -25,6 +29,9 @@ module.exports = {
       {
         name: "app3",
         script: "./app.js",
+        namespace: "test aap.js",
+        watch: true,
+        VERSION: "1.0.0", // Example version
         // env: {
         //     VERSION: "1.0.0" // Example version
         //   }
